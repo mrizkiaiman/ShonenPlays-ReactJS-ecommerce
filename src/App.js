@@ -5,7 +5,7 @@ function App() {
     <div>
       <SignIn />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

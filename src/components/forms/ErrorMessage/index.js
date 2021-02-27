@@ -2,5 +2,5 @@ import React from 'react'
 
 export default function ErrorMessage({text, visible}) {
   if (!visible || !text) return null
-  else return <p className="text-red mt-1">{text}</p>
+  else return <p className="font-oxanium text-sm text-red-600 mt-1">{text}</p>
 }
