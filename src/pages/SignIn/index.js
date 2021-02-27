@@ -10,8 +10,8 @@ export default function SignIn() {
   const {Form, FormButton, FormField} = Forms
   const {Button} = Parts
   return (
-    <section className="flex flex-col items-center h-screen md:flex-row ">
-      <div className="hidden w-full h-screen bg-red-500 lg:block md:w-1/3 lg:w-2/3"></div>
+    <section className="mainContainer">
+      <div className="bannerContainer"></div>
       <div className="signInContainer">
         <div className="signInContainer--formContainer">
           <Form
@@ -21,17 +21,15 @@ export default function SignIn() {
               console.log(values)
             }}>
             <>
-              <p className="font-oxanium text-3xl font-semibold mb-8">
+              <p className="text-3xl font-semibold mb-8">
                 Sign in to your account
               </p>
               <div className="mb-4">
-                <label className="font-oxanium font-semibold">
-                  Email Address
-                </label>
+                <label className="font-semibold">Email Address</label>
                 <FormField name="email" placeholder="Email" />
               </div>
               <div className="mb-1">
-                <label className="font-oxanium font-semibold">Password</label>
+                <label className="font-semibold">Password</label>
                 <FormField
                   type="password"
                   name="password"
@@ -41,6 +39,7 @@ export default function SignIn() {
               <div class="mt-2 text-right">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://mrizkiaiman.wordpress.com"
                   class="text-sm font-semibold leading-relaxed text-gray-700 hover:text-black focus:text-blue-700">
                   Forgot Password?
@@ -49,16 +48,18 @@ export default function SignIn() {
               <FormButton type="submit" title="Sign In" />
               <hr className="w-full border-t my-4 mt-6 border-gray-200" />
               <Button
-                icon={<img src={GoogleIcon} className="mr-4" />}
+                icon={
+                  <img src={GoogleIcon} className="mr-4" alt="google-icon" />
+                }
                 title={'Log in with Google'}
               />
-
-              <p class="mt-8 text-center font-oxanium">
+              <p class="mt-8 text-center">
                 Need an account?{' '}
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://mrizkiaiman.wordpress.com"
-                  class="font-semibold font-oxanium text-f-blue hover:text-blue-700">
+                  class="font-semibold text-f-blue hover:text-blue-700">
                   Sign Up
                 </a>
               </p>

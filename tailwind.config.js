@@ -10,7 +10,7 @@ module.exports = {
         'f-blue': '#0389FF',
       },
       fontFamily: {
-        oxanium: ['Oxanium', 'cursive'],
+        sans: ['Oxanium', 'cursive'],
       },
     },
   },

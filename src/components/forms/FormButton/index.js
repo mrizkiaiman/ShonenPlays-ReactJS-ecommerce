@@ -10,7 +10,10 @@ export default function FormButton({customStyle, className, title}) {
       className={
         className
           ? className
-          : 'block w-full px-4 py-3 mt-6 font-semibold text-white transition duration-500 ease-in-out transform bg-black rounded-lg hover:bg-gray-800 hover:to-black focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2'
+          : `block w-full px-4 py-3 mt-6 
+          font-semibold text-white bg-d-green rounded-lg hover:bg-white 
+          hover:text-d-green border-gray-300 border 
+          transition duration-400 ease-in-out`
       }>
       {title}
     </button>
