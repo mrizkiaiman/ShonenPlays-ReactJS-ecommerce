@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import SignIn from './pages/SignIn'
 
 function App() {
   return (
     <div>
-      <p className="text-sm">asd</p>
+      <SignIn />
     </div>
   );
 }
