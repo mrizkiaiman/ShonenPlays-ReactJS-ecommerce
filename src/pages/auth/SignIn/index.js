@@ -1,14 +1,17 @@
 import React from 'react'
 import './style.scss'
-import {FormValidation} from '../../utils'
 //Assets
-import GoogleIcon from '../../assets/Icons/google.svg'
+import GoogleIcon from '../../../assets/Icons/google.svg'
 //Components
-import {Forms, Parts} from '../../components'
+import {Forms, Parts} from '../../../components'
+//Utils
+import {FormValidation} from '../../../utils'
+import {Link} from 'react-router-dom'
 
 export default function SignIn() {
   const {Form, FormButton, FormField} = Forms
   const {Button, Line} = Parts
+
   return (
     <section className="mainContainer">
       <div className="bannerContainer"></div>
@@ -55,13 +58,13 @@ export default function SignIn() {
               />
               <p class="mt-8 text-center">
                 Need an account?{' '}
-                <a
-                  target="_blank"
+                <Link
+                  to="/signup"
                   rel="noreferrer"
                   href="https://mrizkiaiman.wordpress.com"
                   class="font-semibold text-f-blue hover:text-blue-700">
                   Sign Up
-                </a>
+                </Link>
               </p>
             </>
           </Form>
