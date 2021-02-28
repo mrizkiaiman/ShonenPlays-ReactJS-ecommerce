@@ -8,7 +8,7 @@ import {Forms, Parts} from '../../components'
 
 export default function SignIn() {
   const {Form, FormButton, FormField} = Forms
-  const {Button} = Parts
+  const {Button, Line} = Parts
   return (
     <section className="mainContainer">
       <div className="bannerContainer"></div>
@@ -41,12 +41,12 @@ export default function SignIn() {
                   target="_blank"
                   rel="noreferrer"
                   href="https://mrizkiaiman.wordpress.com"
-                  class="text-sm font-semibold leading-relaxed text-gray-700 hover:text-black focus:text-blue-700">
+                  class="text-sm font-semibold text-gray-700 hover:text-black focus:text-blue-700">
                   Forgot Password?
                 </a>
               </div>
               <FormButton type="submit" title="Sign In" />
-              <hr className="w-full border-t my-4 mt-6 border-gray-200" />
+              <Line />
               <Button
                 icon={
                   <img src={GoogleIcon} className="mr-4" alt="google-icon" />
