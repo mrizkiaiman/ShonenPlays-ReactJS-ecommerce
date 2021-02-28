@@ -3,6 +3,7 @@ import React from 'react'
 export default function Button({title, className, onSubmit, icon}) {
   return (
     <button
+      onClick={onSubmit ? () => onSubmit() : null}
       className={
         className
           ? className

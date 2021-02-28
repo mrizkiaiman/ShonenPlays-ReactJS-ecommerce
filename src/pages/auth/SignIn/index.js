@@ -6,11 +6,12 @@ import GoogleIcon from '../../../assets/Icons/google.svg'
 import {Forms, Parts} from '../../../components'
 //Utils
 import {FormValidation} from '../../../utils'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 
 export default function SignIn() {
   const {Form, FormButton, FormField} = Forms
   const {Button, Line} = Parts
+  const history = useHistory()
 
   return (
     <section className="mainContainer">
@@ -55,6 +56,7 @@ export default function SignIn() {
                   <img src={GoogleIcon} className="mr-4" alt="google-icon" />
                 }
                 title={'Log in with Google'}
+                onSubmit={() => history.push('/home')}
               />
               <p class="mt-8 text-center">
                 Need an account?{' '}
