@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 //Components
 import {NavLink as Link} from 'react-router-dom'
-import {FaAngellist} from 'react-icons/fa'
 
 export const Nav = styled.nav`
   background: #fff;
@@ -13,13 +12,13 @@ export const Nav = styled.nav`
   border-bottom: 1px solid #e5e7eb;
 
   @media (min-width: 1820px) {
-    margin: 0 100px;
+    margin: 0 250px;
   }
 `
 
 export const NavTitle = styled(Link)`
   color: black;
-  font-size: 50px;
+  font-size: 54px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -35,19 +34,15 @@ export const NavMenu = styled.div`
   flex-wrap: wrap;
 
   @media (min-width: 1820px) {
-    margin: 0 100px;
+    margin: 0 250px;
   }
 
   p {
-    font-size: 20px;
-    margin: 0 20px;
+    font-size: 18px;
+    margin: 0 30px;
 
     @media (max-width: 603px) {
       margin: 12px 20px;
     }
   }
-`
-
-export const NavIcon = styled(FaAngellist)`
-  font-size: 20px;
 `

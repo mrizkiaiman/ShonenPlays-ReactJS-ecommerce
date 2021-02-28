@@ -11,6 +11,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Oxanium', 'cursive'],
+        titillium: ['Titillium Web', 'sans-serif'],
       },
     },
   },

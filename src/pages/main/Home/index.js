@@ -1,12 +1,13 @@
 import React from 'react'
 //Components
-import {StyledComps} from '../../../components'
+import {Parts} from '../../../components'
 
 export default function Home() {
-  const {Navbar} = StyledComps
+  const {Navbar, Carousel} = Parts
   return (
     <>
       <Navbar />
+      <Carousel />
     </>
   )
 }
