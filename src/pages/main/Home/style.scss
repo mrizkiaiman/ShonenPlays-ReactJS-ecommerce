@@ -1,0 +1,12 @@
+.homeContainer {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+
+  @media (min-width: 1820px) {
+    margin: 0 250px;
+  }
+}

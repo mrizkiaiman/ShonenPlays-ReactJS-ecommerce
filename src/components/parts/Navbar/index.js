@@ -15,28 +15,26 @@ const NavBar = () => {
   const MenuList = ['Home', 'About', 'Categories', 'Blog', 'Faq', 'Contact']
 
   return (
-    <p>
-      <Nav>
-        <div className="flex justify-between items-center w-full">
-          <div className="flex flex-wrap">
-            <NavIcon src={SearchIcon} alt="search-icon" />
-            <NavIcon src={UserIcon} alt="user-icon" />
-          </div>
-          <NavTitle to="/">ShonenPlays</NavTitle>
-          <div className="flex flex-wrap">
-            <NavIcon src={WishlistIcon} alt="wishlist-icon" />
-            <NavIcon src={CartIcon} alt="cart-icon" />
-          </div>
+    <Nav>
+      <div className="flex justify-between items-center w-full">
+        <div className="flex flex-wrap">
+          <NavIcon src={SearchIcon} alt="search-icon" />
+          <NavIcon src={UserIcon} alt="user-icon" />
         </div>
-        <div className="flex">
-          <NavMenu>
-            {MenuList.map((menu, index) => (
-              <Menu name={menu} key={index} />
-            ))}
-          </NavMenu>
+        <NavTitle to="/">ShonenPlays</NavTitle>
+        <div className="flex flex-wrap">
+          <NavIcon src={WishlistIcon} alt="wishlist-icon" />
+          <NavIcon src={CartIcon} alt="cart-icon" />
         </div>
-      </Nav>
-    </p>
+      </div>
+      <div className="flex">
+        <NavMenu>
+          {MenuList.map((menu, index) => (
+            <Menu name={menu} key={index} />
+          ))}
+        </NavMenu>
+      </div>
+    </Nav>
   )
 }
 

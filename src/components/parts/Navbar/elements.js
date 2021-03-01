@@ -9,11 +9,6 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  border-bottom: 1px solid #e5e7eb;
-
-  @media (min-width: 1820px) {
-    margin: 0 250px;
-  }
 `
 
 export const NavTitle = styled(Link)`
@@ -37,10 +32,6 @@ export const NavMenu = styled.div`
   padding-bottom: 34px;
   flex-wrap: wrap;
 
-  @media (min-width: 1820px) {
-    margin: 0 250px;
-  }
-
   p {
     font-size: 18px;
     margin: 0 30px;
@@ -53,8 +44,13 @@ export const NavMenu = styled.div`
 
 export const NavIcon = styled.img`
   margin: 0px 35px;
+
   cursor: pointer;
   display: block;
+
+  @media (max-width: 603px) {
+    margin: 12px 20px;
+  }
 
   :hover {
     border: 2px solid black;

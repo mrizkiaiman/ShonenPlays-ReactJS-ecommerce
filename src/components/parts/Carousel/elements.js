@@ -24,8 +24,4 @@ export const TitleTextInCarouselImage = styled.p`
   padding-top: 85px;
 `
 
-export const CarouselContainer = styled.div`
-  @media (min-width: 1820px) {
-    margin: 0 250px;
-  }
-`
+export const CarouselContainer = styled.div``
