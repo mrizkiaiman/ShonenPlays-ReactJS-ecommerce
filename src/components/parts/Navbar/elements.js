@@ -24,6 +24,10 @@ export const NavTitle = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   padding: 30px 0;
+
+  @media (max-width: 603px) {
+    font-size: 24px;
+  }
 `
 
 export const NavMenu = styled.div`
@@ -44,5 +48,19 @@ export const NavMenu = styled.div`
     @media (max-width: 603px) {
       margin: 12px 20px;
     }
+  }
+`
+
+export const NavIcon = styled.img`
+  margin: 0px 35px;
+  cursor: pointer;
+  display: block;
+
+  :hover {
+    border: 2px solid black;
+    padding: 10px;
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+    border-radius: 40px;
   }
 `

@@ -5,6 +5,25 @@ export const CarouselImage = styled.img`
   object-fit: cover;
 `
 
+export const TextInCarouselImage = styled.p`
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 50px;
+`
+
+export const TitleTextInCarouselImage = styled.p`
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 54px;
+  font-weight: bold;
+  padding: 50px;
+  padding-top: 85px;
+`
+
 export const CarouselContainer = styled.div`
   @media (min-width: 1820px) {
     margin: 0 250px;

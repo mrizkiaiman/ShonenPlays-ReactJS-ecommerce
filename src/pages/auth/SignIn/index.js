@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss'
 //Assets
-import GoogleIcon from '../../../assets/Icons/google.svg'
+import GoogleIcon from '../../../assets/icons/google.svg'
 //Components
 import {Forms, Parts} from '../../../components'
 //Utils
