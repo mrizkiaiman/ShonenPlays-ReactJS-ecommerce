@@ -1,0 +1,22 @@
+.section {
+  @apply flex justify-between flex-wrap;
+  padding: 70px 100px;
+
+  @media (max-width: 603px) {
+    flex-direction: column;
+  }
+}
+
+.container {
+  @apply flex justify-center items-center;
+
+  @media (max-width: 603px) {
+    margin-top: 20px;
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}

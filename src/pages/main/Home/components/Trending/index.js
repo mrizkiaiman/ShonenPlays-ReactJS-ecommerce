@@ -1,4 +1,5 @@
 import React from 'react'
+import {regularImg, smallerImg, biggerImg} from './Trending.module.scss'
 //Assets
 import {
   NormalSizeImage,
@@ -6,47 +7,32 @@ import {
   SlightlyBiggerSizeImage,
   DoubleSizeImage,
 } from '../../../../../assets/trending'
-//Components
-import {
-  TrendingSection,
-  TrendingContainer,
-  TrendingContent,
-  TrendingImage,
-  TrendingBiggerImage,
-  TrendingSmallerImage,
-  TrendingTitleText,
-  TrendingSubtitleText,
-} from './elements'
 
 function Trending() {
   return (
-    <TrendingSection>
-      <TrendingContainer>
-        <TrendingContent>
+    <div className="flex flex-wrap">
+      <div className="flex justify-between w-full mt-15">
+        <div style={{width: 732}}>
           <div className="p-5">
-            <TrendingTitleText>Trending ShonenStyles</TrendingTitleText>
-            <TrendingTitleText>Collections</TrendingTitleText>
+            <p className="font-bold text-3xl text-gray-400">
+              Trending ShonenStyles
+            </p>
+            <p className="font-bold text-3xl text-gray-400">Collections</p>
           </div>
-          <TrendingSubtitleText>
+          <p className="text-xl p-5">
             Checkout our newest trends this coming season
-          </TrendingSubtitleText>
-        </TrendingContent>
-        <TrendingContent>
-          <TrendingImage alt="switch-image" src={SlightlyBiggerSizeImage} />
-        </TrendingContent>
-      </TrendingContainer>
-      <TrendingContainer>
-        <div>
-          <TrendingContent>
-            <TrendingSmallerImage alt="switch-image" src={NormalSizeImage} />
-          </TrendingContent>
-          <TrendingContent>
-            <TrendingSmallerImage alt="switch-image" src={NormalSizeImagev2} />
-          </TrendingContent>
+          </p>
         </div>
-        <TrendingBiggerImage alt="ipad-image" src={DoubleSizeImage} />
-      </TrendingContainer>
-    </TrendingSection>
+        <img alt="alt" className={regularImg} src={SlightlyBiggerSizeImage} />
+      </div>
+      <div className="flex justify-between w-full items-center mt-15">
+        <div>
+          <img className={smallerImg} alt="alt" src={NormalSizeImage} />
+          <img className={smallerImg} alt="alt" src={NormalSizeImagev2} />
+        </div>
+        <img className={biggerImg} alt="alt" src={DoubleSizeImage} />
+      </div>
+    </div>
   )
 }
 

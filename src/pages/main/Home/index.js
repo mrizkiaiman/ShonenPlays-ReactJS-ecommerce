@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+import './styles.scss'
 //Components
 import {Parts} from '../../../components'
 import {Feature, Trending} from './components'
