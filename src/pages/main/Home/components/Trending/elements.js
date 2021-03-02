@@ -15,12 +15,12 @@ export const TrendingContainer = styled.div`
 export const TrendingTitleText = styled.div`
   font-weight: bold;
   font-size: 40px;
-  color: black;
+  color: gray;
 `
 
 export const TrendingSubtitleText = styled.div`
   font-size: 18px;
-  color: gray;
+  color: black;
   padding: 20px;
 `
 

@@ -5,7 +5,7 @@ import {Parts} from '../../../components'
 import {Feature, Trending} from './components'
 
 export default function Home() {
-  const {Navbar, Carousel} = Parts
+  const {Navbar, Carousel, Glider} = Parts
   return (
     <>
       <div className="homeContainer">
@@ -14,6 +14,7 @@ export default function Home() {
           <Carousel />
           <Feature />
           <Trending />
+          <Glider />
         </div>
       </div>
     </>

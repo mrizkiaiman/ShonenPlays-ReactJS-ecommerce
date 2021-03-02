@@ -18,12 +18,12 @@ const CustomCarousel = () => {
       <Carousel swipeable={true} emulateTouch={true} showStatus={false}>
         <div>
           <TextInCarouselImage>Welcome to</TextInCarouselImage>
-          <TitleTextInCarouselImage>ShonenPlays</TitleTextInCarouselImage>
+          <TitleTextInCarouselImage>ShonenStyles</TitleTextInCarouselImage>
           <CarouselImage src={FirstSlide} alt="carousel-1" />
         </div>
         <div>
           <TextInCarouselImage>SALE!</TextInCarouselImage>
-          <TitleTextInCarouselImage>ShonenPlays</TitleTextInCarouselImage>
+          <TitleTextInCarouselImage>ShonenStyles</TitleTextInCarouselImage>
           <CarouselImage src={SecondSlide} alt="carousel-2" />
         </div>
       </Carousel>

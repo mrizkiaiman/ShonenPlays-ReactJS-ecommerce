@@ -1,11 +1,10 @@
 import React from 'react'
 //Assets
 import {
-  IpadImage,
-  BooksImage,
-  SwitchImage,
-  SneakerImage,
-  AirPodsImage,
+  NormalSizeImage,
+  NormalSizeImagev2,
+  SlightlyBiggerSizeImage,
+  DoubleSizeImage,
 } from '../../../../../assets/trending'
 //Components
 import {
@@ -25,7 +24,7 @@ function Trending() {
       <TrendingContainer>
         <TrendingContent>
           <div className="p-5">
-            <TrendingTitleText>Trending ShonenPlays</TrendingTitleText>
+            <TrendingTitleText>Trending ShonenStyles</TrendingTitleText>
             <TrendingTitleText>Collections</TrendingTitleText>
           </div>
           <TrendingSubtitleText>
@@ -33,19 +32,19 @@ function Trending() {
           </TrendingSubtitleText>
         </TrendingContent>
         <TrendingContent>
-          <TrendingImage alt="switch-image" src={SwitchImage} />
+          <TrendingImage alt="switch-image" src={SlightlyBiggerSizeImage} />
         </TrendingContent>
       </TrendingContainer>
       <TrendingContainer>
         <div>
           <TrendingContent>
-            <TrendingSmallerImage alt="switch-image" src={SneakerImage} />
+            <TrendingSmallerImage alt="switch-image" src={NormalSizeImage} />
           </TrendingContent>
           <TrendingContent>
-            <TrendingSmallerImage alt="switch-image" src={AirPodsImage} />
+            <TrendingSmallerImage alt="switch-image" src={NormalSizeImagev2} />
           </TrendingContent>
         </div>
-        <TrendingBiggerImage alt="ipad-image" src={IpadImage} />
+        <TrendingBiggerImage alt="ipad-image" src={DoubleSizeImage} />
       </TrendingContainer>
     </TrendingSection>
   )
