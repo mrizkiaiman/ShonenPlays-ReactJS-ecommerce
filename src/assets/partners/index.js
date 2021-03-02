@@ -1,0 +1,6 @@
+export {default as FirstPartnerIcon} from './partner-1.png'
+export {default as SecondPartnerIcon} from './partner-2.png'
+export {default as ThirdPartnerIcon} from './partner-3.png'
+export {default as FourthPartnerIcon} from './partner-4.png'
+export {default as FifthPartnerIcon} from './partner-5.png'
+export {default as SixthPartnerIcon} from './partner-6.png'

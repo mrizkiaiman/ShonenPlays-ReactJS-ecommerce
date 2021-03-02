@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.scss'
 //Components
 import {Parts} from '../../../components'
-import {Feature, Trending} from './components'
+import {Features, Trending, Partners, Promos} from './components'
 
 export default function Home() {
   const {Navbar, Carousel, Glider} = Parts
@@ -12,8 +12,12 @@ export default function Home() {
         <div>
           <Navbar />
           <Carousel />
-          <Feature />
+          <Features />
           <Trending />
+
+          <Glider />
+          <Promos />
+          <Partners />
           <Glider />
         </div>
       </div>
