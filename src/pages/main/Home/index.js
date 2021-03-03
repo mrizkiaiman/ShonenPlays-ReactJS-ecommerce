@@ -5,7 +5,7 @@ import {Parts} from '../../../components'
 import {Features, Trending, Partners, Promos, Newsletter} from './components'
 
 export default function Home() {
-  const {Navbar, Carousel, Glider} = Parts
+  const {Navbar, Carousel, Glider, Footer} = Parts
   return (
     <>
       <div className={container}>
@@ -21,6 +21,7 @@ export default function Home() {
           <Newsletter />
         </div>
       </div>
+      <Footer />
     </>
   )
 }
