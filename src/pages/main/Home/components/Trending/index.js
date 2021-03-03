@@ -30,14 +30,14 @@ function Trending() {
   return (
     <div className="flex flex-wrap">
       <div className="flex justify-between w-full mt-15">
-        <div style={{width: 732}}>
-          <div className="p-5">
-            <p className="font-bold text-3xl text-gray-400">
+        <div style={{width: 732, padding: 45}}>
+          <div className="mb-7">
+            <p className="font-bold text-4xl text-black">
               Trending ShonenStyles
             </p>
-            <p className="font-bold text-3xl text-gray-400">Collections</p>
+            <p className="font-bold text-4xl text-black">Collections</p>
           </div>
-          <p className="text-xl p-5">
+          <p className="text-xl text-gray-400 font-bold">
             Checkout our newest trends this coming season
           </p>
         </div>
