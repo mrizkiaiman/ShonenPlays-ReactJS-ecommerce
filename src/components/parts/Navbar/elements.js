@@ -58,9 +58,6 @@ export const NavMenu = styled.div`
   flex-wrap: wrap;
 
   p {
-    font-size: 20px;
-    margin: 0 30px;
-
     @media (max-width: 603px) {
       margin: 12px 20px;
     }

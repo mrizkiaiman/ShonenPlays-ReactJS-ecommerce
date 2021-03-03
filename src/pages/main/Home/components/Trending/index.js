@@ -49,7 +49,7 @@ function Trending() {
             </div>
             <div className="flex items-center cursor-pointer">
               <img src={RightArrowIcon} alt="right-icon" className={icon} />
-              <p className="text-orange font-semibold text-xl mt-1 ml-4">
+              <p className="text-white font-semibold text-xl mt-1 ml-4">
                 Get it now
               </p>
             </div>
