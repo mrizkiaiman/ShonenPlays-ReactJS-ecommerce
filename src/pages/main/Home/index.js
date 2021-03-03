@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.scss'
+import {container} from './Home.module.scss'
 //Components
 import {Parts} from '../../../components'
 import {Features, Trending, Partners, Promos, Newsletter} from './components'
@@ -8,7 +8,7 @@ export default function Home() {
   const {Navbar, Carousel, Glider} = Parts
   return (
     <>
-      <div className="homeContainer">
+      <div className={container}>
         <div>
           <Navbar />
           <Carousel />
