@@ -1,16 +1,11 @@
 import React from 'react'
-//Assets
-import {LeftSideImage, RightSideImage} from '../../../../../assets/promos'
+import {leftImg, rightImg} from './Promos.module.scss'
 
 const Promos = () => {
   return (
     <div className="flex w-full relative py-24">
-      <img src={LeftSideImage} className="z-20 rounded" alt="promo-left" />
-      <img
-        src={RightSideImage}
-        className="rounded absolute right-0 py-24"
-        alt="promo-right"
-      />
+      <div className={leftImg}></div>
+      <div className={rightImg}></div>
     </div>
   )
 }

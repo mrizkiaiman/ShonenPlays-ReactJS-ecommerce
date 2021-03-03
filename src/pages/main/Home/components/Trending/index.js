@@ -1,12 +1,5 @@
 import React from 'react'
-import {regularImg, smallerImg, biggerImg} from './Trending.module.scss'
-//Assets
-import {
-  NormalSizeImage,
-  NormalSizeImagev2,
-  SlightlyBiggerSizeImage,
-  DoubleSizeImage,
-} from '../../../../../assets/trending'
+import {firstImg, secondImg, thirdImg, fourthImg} from './Trending.module.scss'
 
 function Trending() {
   return (
@@ -23,14 +16,14 @@ function Trending() {
             Checkout our newest trends this coming season
           </p>
         </div>
-        <img alt="alt" className={regularImg} src={SlightlyBiggerSizeImage} />
+        <div className={firstImg}></div>
       </div>
       <div className="flex justify-between w-full items-center mt-15">
         <div>
-          <img className={smallerImg} alt="alt" src={NormalSizeImage} />
-          <img className={smallerImg} alt="alt" src={NormalSizeImagev2} />
+          <div className={secondImg}></div>
+          <div className={thirdImg}></div>
         </div>
-        <img className={biggerImg} alt="alt" src={DoubleSizeImage} />
+        <div className={fourthImg}></div>
       </div>
     </div>
   )

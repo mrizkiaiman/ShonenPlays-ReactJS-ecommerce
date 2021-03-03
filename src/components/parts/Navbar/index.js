@@ -22,7 +22,6 @@ const NavBar = () => {
   const Menu = ({name}) => (
     <p className="font-titillium text-d-green cursor-pointer">{name}</p>
   )
-  const test
 
   const MenuList = ['Home', 'About', 'Categories', 'Blog', 'Faq', 'Contact']
 
