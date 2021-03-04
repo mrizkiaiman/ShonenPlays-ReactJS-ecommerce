@@ -88,7 +88,6 @@ export const NavTitleGreen = styled(Link)`
 export const NavMenu = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-bottom: 34px;
   flex-wrap: wrap;
 
