@@ -17,8 +17,10 @@ const CustomCarousel = () => {
     <Carousel swipeable={true} emulateTouch={true} showStatus={false}>
       <div className={firstSlide}>
         <div className={textContainer}>
-          <p className="text-white text-3xl font-bold text-left">Welcome to</p>
-          <p className="text-white text-6xl font-bold text-left">
+          <p className="text-white text-3xl font-bold text-left sm:text-xl">
+            Welcome to
+          </p>
+          <p className="text-white text-6xl font-bold text-left sm:text-3xl">
             ShonenStyles
           </p>
           <button className="w-1/6 h-16 bg-d-green rounded mt-7">

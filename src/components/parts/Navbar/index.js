@@ -48,14 +48,15 @@ const NavBar = () => {
   return (
     <Nav>
       <NavTopContainer>
-        <NavIconContainer className="flex flex-wrap">
+        <NavIconContainer>
           <NavIcon src={SearchIcon} alt="search-icon" />
           <NavIcon src={UserIcon} alt="user-icon" />
         </NavIconContainer>
         <NavTitleOrange to="/">
           Shonen<NavTitleGreen to="/">Styles</NavTitleGreen>
         </NavTitleOrange>
-        <NavIconContainer className="flex flex-wrap">
+
+        <NavIconContainer>
           <NavIcon src={WishlistIcon} alt="wishlist-icon" />
           <NavIcon src={CartIcon} alt="cart-icon" />
         </NavIconContainer>
@@ -68,7 +69,7 @@ const NavBar = () => {
         </NavMenu>
       </NavBotContainer>
       {displayCategories && (
-        <div className="h-20 w-20 bg-red-500 absolute mt-96">
+        <div className="h-20 w-20 bg-red-500">
           <p>asdasdsd</p>
         </div>
       )}

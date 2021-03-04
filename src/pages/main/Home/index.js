@@ -10,8 +10,12 @@ export default function Home() {
     <>
       <div className={container}>
         <div>
-          <Navbar />
-          <Carousel />
+          <div className="z-20">
+            <Navbar />
+          </div>
+          <div className="z-0">
+            <Carousel />
+          </div>
           <Features />
           <Trending />
           <Glider />
