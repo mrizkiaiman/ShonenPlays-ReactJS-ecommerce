@@ -7,9 +7,9 @@
 }
 
 .rightImg {
-  @apply rounded absolute right-0 my-24;
-
   width: 902px;
   height: 480px;
   background-image: url('../../../../../assets/promos/promo-right.png');
+
+  @apply rounded absolute right-0 my-24;
 }
