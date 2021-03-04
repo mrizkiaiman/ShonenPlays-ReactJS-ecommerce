@@ -1,7 +1,47 @@
+.firstSlide {
+  background-image: url('../../../assets/carousel/carousel-1.png');
+  width: 100%;
+  height: 550px;
+}
+
+.secondSlide {
+  background-image: url('../../../assets/carousel/carousel-2.png');
+  width: 100%;
+  height: 550px;
+}
+
+.thirdSlide {
+  background-image: url('../../../assets/carousel/carousel-3.png');
+  width: 100%;
+  height: 550px;
+}
+
+.fourthSlide {
+  background-image: url('../../../assets/carousel/carousel-4.png');
+  width: 100%;
+  height: 550px;
+}
+
+.textContainer {
+  @apply absolute w-full flex justify-start justify-self-start flex-col p-20;
+
+  @media (max-width: 640px) {
+    padding-left: 480px;
+  }
+}
+
 .subtitle {
-  @apply absolute text-center text-white text-3xl font-bold p-12;
+  @apply text-black text-3xl font-bold text-left;
+
+  @media (max-width: 640px) {
+    font-size: 20px;
+  }
 }
 
 .title {
-  @apply absolute text-center text-white text-5xl font-bold p-12 pt-20;
+  @apply text-black text-6xl font-bold text-left;
+
+  @media (max-width: 640px) {
+    font-size: 35px;
+  }
 }

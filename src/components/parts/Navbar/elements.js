@@ -16,6 +16,41 @@ export const NavTopContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @media (max-width: 640px) {
+    width: 640px;
+  }
+`
+
+export const NavIconContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 640px) {
+    width: 640px;
+  }
+`
+
+export const NavIcon = styled.img`
+  margin: 0px 35px;
+  cursor: pointer;
+  display: block;
+
+  @media (max-width: 640px) {
+    margin: 0px 15px;
+    width: 25px;
+    height: 25px;
+  }
+
+  :hover {
+    border: 2px solid black;
+    padding: 10px;
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+    border-radius: 40px;
+  }
 `
 
 export const NavBotContainer = styled.div`
@@ -31,7 +66,7 @@ export const NavTitleOrange = styled(Link)`
   cursor: pointer;
   padding: 30px 0;
 
-  @media (max-width: 603px) {
+  @media (max-width: 640px) {
     font-size: 24px;
   }
 `
@@ -45,7 +80,7 @@ export const NavTitleGreen = styled(Link)`
   cursor: pointer;
   padding: 30px 0;
 
-  @media (max-width: 603px) {
+  @media (max-width: 640px) {
     font-size: 24px;
   }
 `
@@ -58,35 +93,14 @@ export const NavMenu = styled.div`
   flex-wrap: wrap;
 
   p {
-    font-size: 20px;
-    margin: 0 30px;
-
-    @media (max-width: 603px) {
+    @media (max-width: 640px) {
       margin: 12px 20px;
     }
   }
-`
 
-export const NavIconContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`
-
-export const NavIcon = styled.img`
-  margin: 0px 35px;
-
-  cursor: pointer;
-  display: block;
-
-  @media (max-width: 603px) {
-    margin: 12px 20px;
-  }
-
-  :hover {
-    border: 2px solid black;
-    padding: 10px;
-    transition-timing-function: ease-in-out;
-    transition: 0.3s;
-    border-radius: 40px;
+  @media (max-width: 640px) {
+    font-size: 20px;
+    width: 640px;
+    display: none;
   }
 `

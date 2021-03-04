@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 //Assets
 import {
   SearchIcon,
@@ -6,6 +6,7 @@ import {
   WishlistIcon,
   CartIcon,
 } from '../../../assets/icons/navbar'
+import DownArrow from '../../../assets/icons/down-arrow.svg'
 //Components
 import {
   Nav,
@@ -19,23 +20,43 @@ import {
 } from './elements'
 
 const NavBar = () => {
-  const Menu = ({name}) => (
-    <p className="font-titillium text-d-green cursor-pointer">{name}</p>
+  const [displayCategories, setDisplayCategories] = useState(false)
+  const Menu = ({value}) => (
+    <button
+      onClick={value && value.onSubmit ? () => value.onSubmit() : null}
+      className="flex items-center cursor-pointer mx-9">
+      <p className="text-d-green font-light text-lg">
+        {typeof value === 'string' ? value : value.name}
+      </p>
+      {value && value.icon ? value.icon : null}
+    </button>
   )
 
-  const MenuList = ['Home', 'About', 'Categories', 'Blog', 'Faq', 'Contact']
+  const MenuList = [
+    'Home',
+    'About',
+    {
+      name: 'Categories',
+      icon: <img src={DownArrow} className="ml-4" alt="down-arrow" />,
+      onSubmit: () => setDisplayCategories(!displayCategories),
+    },
+    'Blog',
+    'Faq',
+    'Contact',
+  ]
 
   return (
     <Nav>
       <NavTopContainer>
-        <NavIconContainer className="flex flex-wrap">
+        <NavIconContainer>
           <NavIcon src={SearchIcon} alt="search-icon" />
           <NavIcon src={UserIcon} alt="user-icon" />
         </NavIconContainer>
         <NavTitleOrange to="/">
           Shonen<NavTitleGreen to="/">Styles</NavTitleGreen>
         </NavTitleOrange>
-        <NavIconContainer className="flex flex-wrap">
+
+        <NavIconContainer>
           <NavIcon src={WishlistIcon} alt="wishlist-icon" />
           <NavIcon src={CartIcon} alt="cart-icon" />
         </NavIconContainer>
@@ -43,10 +64,15 @@ const NavBar = () => {
       <NavBotContainer className="flex">
         <NavMenu>
           {MenuList.map((menu, index) => (
-            <Menu name={menu} key={index} />
+            <Menu value={menu} key={index} />
           ))}
         </NavMenu>
       </NavBotContainer>
+      {displayCategories && (
+        <div className="h-20 w-20 bg-red-500">
+          <p>asdasdsd</p>
+        </div>
+      )}
     </Nav>
   )
 }

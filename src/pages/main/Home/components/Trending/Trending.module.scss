@@ -1,7 +1,7 @@
 .firstImg {
   width: 732px;
   height: 320px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 30px;
   background-image: url('../../../../../assets/trending/firstImg.png');
 }
@@ -9,7 +9,7 @@
 .secondImg {
   width: 732px;
   height: 288px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 30px;
   background-image: url('../../../../../assets/trending/secondImg.png');
 }
@@ -17,7 +17,7 @@
 .thirdImg {
   width: 732px;
   height: 288px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 30px;
   background-image: url('../../../../../assets/trending/thirdImg.png');
 }
@@ -25,7 +25,13 @@
 .fourthImg {
   height: 610px;
   width: 732px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 30px;
   background-image: url('../../../../../assets/trending/fourthImg.png');
+}
+
+.icon {
+  padding: 5px;
+  background-color: white;
+  border-radius: 100px;
 }
